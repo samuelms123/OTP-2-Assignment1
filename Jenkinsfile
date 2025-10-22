@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch:'main', url:'https://github.com/samuelms123/OTP-2-assignment1'
+                git branch:'main', url:'https://github.com/samuelms123/otp-2-assignment1'
             }
         }
         stage('Build and Test') {
