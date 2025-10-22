@@ -6,14 +6,14 @@ pipeline {
         // Define Docker Hub credentials ID
         DOCKERHUB_CREDENTIALS_ID = 'docker_hub'
         // Define Docker Hub repository name
-        DOCKERHUB_REPO = 'samuelms123/OTP_2_class_assignment1'
+        DOCKERHUB_REPO = 'samuelms123/otp-2-class_assignment1'
         // Define Docker image tag
         DOCKER_IMAGE_TAG = 'latest'
     }
     stages {
         stage('Checkout') {
             steps {
-                git branch:'main', url:'https://github.com/samuelms123/otp-2-assignment1'
+                git branch:'main', url:'https://github.com/samuelms123/OTP-2-Assignment1.git'
             }
         }
         stage('Build and Test') {
