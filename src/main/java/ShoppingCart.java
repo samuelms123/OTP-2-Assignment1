@@ -35,6 +35,10 @@ public class ShoppingCart {
         System.out.println(rb.getString("totalCostMsg") + " " + totalCost + " " + rb.getString("currency"));
     }
 
+    public double getTotalCost() {
+        return totalCost;
+    }
+
     public void askForItems(int itemAmount) {
         for (int i = 0; i < itemAmount; i++) {
             System.out.print(rb.getString("itemPriceMsg"));
