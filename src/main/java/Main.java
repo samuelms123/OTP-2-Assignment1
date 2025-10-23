@@ -1,5 +1,4 @@
 import java.util.Locale;
-import java.util.ResourceBundle;
 import java.util.Scanner;
         /*
         1. Java Console Application Development
@@ -22,7 +21,6 @@ public class Main {
 
     public static void main(String[] args) {
         ShoppingCart shoppingCart = null;
-        ResourceBundle rb;
 
         Scanner sc = new Scanner(System.in);
         System.out.println();
@@ -50,6 +48,7 @@ public class Main {
                 System.out.println("Invalid language selection");
                 break;
         }
+
         if (shoppingCart != null) {
             shoppingCart.welcomeUser();
             int totalQuantity = shoppingCart.askTotalQuantity();
